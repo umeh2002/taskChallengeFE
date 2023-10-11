@@ -1,9 +1,10 @@
 import { BiHomeAlt } from "react-icons/bi";
-import { user, userState } from "../global/global";
+import { userState } from "../global/global";
 import { useRecoilState } from "recoil";
 
 const HomeHeader = () => {
     const [toogle, setToogle]= useRecoilState(userState)
+    console.log(toogle)
   return (
     <div className="w-full h-[70px] flex justify-center items-center bg-slate-700">
       <div className="flex justify-between items-center w-[90%] h-full">

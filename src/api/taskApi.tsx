@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const url:string="http://localhost:2928/api"
+const url:string="https://task-challenge-uidu.onrender.com/api"
 
 export const createTask = async(userID:string, data:any)=>{
     try {

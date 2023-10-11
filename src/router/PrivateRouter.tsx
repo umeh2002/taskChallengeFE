@@ -8,6 +8,7 @@ const PrivateRouter: React.FC<PropsWithChildren> = ({ children }) => {
   const value: any = useRecoilValue(userState);
   const [state, setState] = useRecoilState<any>(user);
 
+  console.log(state)
   let myToken: any = {};
   let token: string = value;
 

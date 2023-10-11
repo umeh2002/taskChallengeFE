@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face{
+  src: url(/public/fonts/Athletics\ Regular.otf);
+  font-family: athletics;
+  }
+  
+  .athletics{
+    font-family: "athletics";
+  }
+
+  :root{
+    font-family: athletics;
+    margin: 0;
+  }

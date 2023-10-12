@@ -33,7 +33,7 @@ export const mainRouter = createBrowserRouter([
     element: <MessageBox/>,
   },
   {
-    path: "/:home",
+    path: "/home",
     element: 
     <PrivateRouter>
       <Home/>

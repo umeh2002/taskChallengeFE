@@ -10,7 +10,7 @@ import { userState } from "../global/global";
 import { useRecoilState, useRecoilValue } from "recoil";
 
 const SignIn = () => {
-  const {token} = useParams()
+  const {tokenID} = useParams()
   const navigate = useNavigate()
 
   const [state, setState] = useRecoilState(userState);
@@ -56,8 +56,8 @@ const SignIn = () => {
   });
 
   useEffect(() => {
-    if (token) {
-      verifyApi(token);
+    if (tokenID) {
+      verifyApi(tokenID);
     }
   }, [])
   return (

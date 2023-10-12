@@ -12,9 +12,9 @@ export const createUser = async (data: any) => {
   }
 };
 
-export const verifyApi = async (token: string) => {
+export const verifyApi = async (tokenID: string) => {
   try {
-    return await axios.patch(`${url}/${token}/verify`).then((res: any) => {
+    return await axios.patch(`${url}/${tokenID}/verify`).then((res: any) => {
       return res.data.data;
     });
   } catch (error) {

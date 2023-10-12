@@ -31,7 +31,7 @@ const Register = () => {
           timerProgressBar:true,
           timer:9000,
         })
-        navigate("/sign-in")
+        navigate("/message")
       } else {
         Swal.fire({
           icon:"error",

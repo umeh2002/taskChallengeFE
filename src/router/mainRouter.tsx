@@ -5,6 +5,7 @@ import SignIn from "../auth/SignIn";
 import Landing from "../pages/Landing";
 import Home from "../pages/Home";
 import PrivateRouter from "./PrivateRouter";
+import MessageBox from "../pages/MessageBox";
 
 export const mainRouter = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ export const mainRouter = createBrowserRouter([
   {
     path: "/:token/sign-in",
     element: <SignIn />,
+  },
+  {
+    path: "/message",
+    element: <MessageBox/>,
   },
   {
     path: "/:home",

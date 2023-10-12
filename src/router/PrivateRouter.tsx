@@ -10,14 +10,14 @@ const PrivateRouter: React.FC<PropsWithChildren> = ({ children }) => {
 
   console.log(state)
   let myToken: any = {};
-  let token: string = value;
+  let tokenID: string = value;
 
-  if (token) {
-    myToken = jwt_decode(token);
+  if (tokenID) {
+    myToken = jwt_decode(tokenID);
     setState(myToken.id);
   }
   return (
-    <div>{token ? <div>{children}</div> : <Navigate to="/sign-in" />}</div>
+    <div>{tokenID ? <div>{children}</div> : <Navigate to="/sign-in" />}</div>
   );
 };
 
